@@ -1,0 +1,123 @@
+@import "compass/reset";
+@import "compass/css3/transition";
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700);
+body {
+  font-family: "Raleway", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  padding: 40px 20px;
+  background: #223c63;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  line-height: 1.2;
+}
+p, pre { line-height: 1.5; margin-bottom: 20px }
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot');
+  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-twitter:before, .icon-lastfm:before, .icon-googleplus:before, .icon-github:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+  content: "\e412";
+}
+.icon-lastfm:before {
+  content: "\e417";
+}
+.icon-googleplus:before {
+  content: "\e383";
+}
+.icon-github:before {
+  content: "\e402";
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#primary-nav {
+  li {
+    display: inline-block;
+    padding: 10px;
+  }
+  li .active {
+    font-weight: 700;
+  }
+  margin-bottom: 20px;
+}
+@mixin icon-hover($name, $color) {
+  .icon-#{$name}:hover { color: $color }
+}
+.container > div {
+  margin: auto;
+  text-align: left;
+}
+#projects, #writings, #social-links, #about { max-width: 500px }
+#work { max-width: 750px }
+#social-list { text-align: center }
+.social-link {
+  display: inline-block;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    font-size: 36px;
+  }
+  i:hover {
+    @include transition(500ms color);
+  }
+  @include icon-hover(googleplus, #db4a39);
+  @include icon-hover(twitter, #00a0d1);
+  @include icon-hover(lastfm, #c3000d);
+  @include icon-hover(github, #4183c4);
+}
+.project {
+  header a { text-decoration: none }
+  a { text-decoration: underline }
+  text-align: left;
+  margin-bottom: 20px;
+  .dates { font-weight: 700 }
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 10px;
+    a {
+      text-decoration: none;
+      &:hover { text-decoration: underline }
+    }
+  }
+}
+#writings {
+  h4 { margin-bottom: 10px }
+  li { margin-bottom: 10px }
+}
+#back-to-writings { display: inline-block; margin-bottom: 10px }
+#page-footer {
+  margin-top: 40px;
+}
