@@ -1,0 +1,10 @@
+<div id="writings">
+  <h4>Articles</h4>
+  <ul>
+    <li ng-repeat="article in articles"><a href="{{article.link}}" title="Read '{{article.title}}'">{{article.title}}</a> &ndash; {{article.date}}</li>
+  </ul>
+  <h4>Creative & Academic Work</h4>
+  <ul>
+    <li ng-repeat="writing in writings"><a href="#/writing/{{writing.link}}" title="Read '{{writing.title}}'">{{writing.title}}</a> &ndash; {{writing.date}}</li>
+  </ul>
+</div>
