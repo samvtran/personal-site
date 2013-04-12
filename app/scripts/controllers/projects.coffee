@@ -12,14 +12,8 @@ angular.module('personalApp')
           <ul>
             <li><a href="https://play.google.com/store/apps/details?id=com.ohso.omgubuntu">OMG! Ubuntu! on Android</a></li>
             <li><a href="https://chrome.google.com/webstore/detail/omg-ubuntu/nhmmlbjenhdockdgpklmdiamollflljn">OMG! Ubuntu! Chrome Extension</a></li>
+            <li>Ubuntu Phone app in development</li>
           </ul>'
-      }
-      {
-        title: 'Unity Tweak Tool'
-        link: 'https://github.com/freyja-dev/unity-tweak-tool'
-        start: 'November 2012'
-        end: 'Present'
-        description: 'Glade and Cairo work, primarily fixing up odd layout issues and implementing dynamic Cairo graphics.'
       }
       {
         title: 'World Literature Today'

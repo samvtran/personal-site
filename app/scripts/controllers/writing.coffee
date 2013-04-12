@@ -4,6 +4,16 @@ angular.module('personalApp')
   .controller 'WritingCtrl', ['$scope', ($scope) ->
     $scope.articles = [
       {
+        title: 'Ubuntu Announce Unity Next, Will Be Written in Qt/QML'
+        href: 'http://www.omgubuntu.co.uk/2013/03/unity-next-project-announced'
+        date: '4 March 2013'
+      }
+      {
+        title: 'Adventures in Magical Realism: Kentucky Route Zero Act I [Review]'
+        href: 'http://www.omgubuntu.co.uk/2013/02/adventures-in-magical-realism-kentucky-route-zero-act-i-review'
+        date: '27 February 2013'
+      }
+      {
         title: 'Torchlight: Diablo-Inspired Action RPG'
         href: 'http://www.omgubuntu.co.uk/2012/12/torchlight-linux-review'
         date: '27 December 2012'
