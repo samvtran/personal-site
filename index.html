@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="personalApp">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Sam Tran</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body ng-controller="AppCtrl">
+    <h1>Sam Tran</h1>
+    <nav id="primary-nav">
+      <ul>
+        <li ng-repeat="page in navigation"><a ng-class="{active: currentUrl() == page.link}" href="/#{{page.link}}">{{page.title}}</a></li>
+      </ul>
+    </nav>
+    <div class="container" ng-view></div>
+    <footer id="page-footer">
+      <p>Copyright &copy; 2012 – 2013 Sam Tran</p>
+    </footer>
+    <script src="scripts/vendor/angular.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
